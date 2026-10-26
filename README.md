@@ -32,9 +32,7 @@ Program numbers indicate stages; they do not fully determine execution order.
 | Outcomes | [02_inc_outcome.sas](prog/02_inc_outcome.sas) | Harmonize terms, counts, and follow-up |
 | Characteristics | [02_inc_samchar.sas](prog/02_inc_samchar.sas) | Prepare sample characteristics and indication flags |
 | Comparative inputs | [03_riskdiff.sas](prog/03_riskdiff.sas) | Create drug-versus-placebo count datasets |
-| SAS → R handoff | Copy required SAS datasets into `data_sas/` | See [required inputs](docs/REPRODUCIBILITY.md#required-inputs-and-missing-preparation) |
 | Meta-analysis in R | [03_percMA_wSumm.Rmd](prog/03_percMA_wSumm.Rmd), [03_percMA_rd.Rmd](prog/03_percMA_rd.Rmd) | Proportions and risk differences; these two analyses are separate branches |
-| R → SAS handoff | Copy R CSV/XLSX outputs from `data/` into SAS `data_ma/` | Supply files consumed by SAS table programs |
 | SAS tables | [03_tbl_outcome.sas](prog/03_tbl_outcome.sas), [03_tbl_rd.sas](prog/03_tbl_rd.sas), [03_tbl_rob.sas](prog/03_tbl_rob.sas) | Outcome, risk-difference, and risk-of-bias tables; RoB table does not require R meta-analysis |
 | R summaries and figures | [03_Table1.Rmd](prog/03_Table1.Rmd), [03_forest_rd.Rmd](prog/03_forest_rd.Rmd), [03_forest_rd_glp1.Rmd](prog/03_forest_rd_glp1.Rmd), [03_rob.Rmd](prog/03_rob.Rmd) | Table 1; forest plots after RD analysis; RoB plots after missing input preparation is recovered |
 
@@ -58,6 +56,3 @@ Copyright (c) 2026 Lijuan Zeng.
 
 MIT permits use, modification, and redistribution, including commercial use, provided the copyright notice and license are retained. The code is provided without warranty. This license does not grant rights to datasets, the published article, or separately licensed third-party software. Please cite the paper when using this work in research; the citation request is separate from the MIT license conditions.
 
-## Author
-
-Programming author: **Lijuan Zeng**.
